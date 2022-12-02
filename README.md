@@ -2,7 +2,7 @@
 
 nn_DF.py - main script to build neural network with adaptive learning rate which is adapted from https://github.com/mnielsen/neural-networks-and-deep-learning
 
-Exi_generator.py - generate Monte Carlo samples for the specific mode and store data with gzip (i=1,2,3,4).
+Exi_generator.py - generate Monte Carlo samples for the specific model and store data with gzip (i=1,2,3,4).
 
 Exi_loader.py - load data (i=1,2,3,4).
 
