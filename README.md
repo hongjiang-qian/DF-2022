@@ -9,5 +9,6 @@ Exi_loader.py - load data (i=1,2,3,4).
 Exi.ipynb - python code in Jupyter notebook to train the neural network and produce results.
 
 datas - data generated from Exi_generator.py (i=1,2,3,4) for each example.
+
 img - images stored from Exi.ipynb.
 
