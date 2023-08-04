@@ -81,7 +81,7 @@ def mc_simulation(f,s,g,s1,alpha,N):
     u=[rng.multivariate_normal(np.zeros(dimX),np.eye(dimX),1).reshape(dimX,1) for i in range(N)]
     v=[rng.multivariate_normal(np.zeros(dimY),np.eye(dimY),1).reshape(dimY,1) for i in range(N)]
     x_raw=np.zeros((N+1,dimX,1)); x_raw[0]=x0                             
-    y_raw=np.zeros((N+1,dimY,1)); y_raw[0]=x0
+    y_raw=np.zeros((N+1,dimY,1)); y_raw[0]=0
     for k in range(N):
         x_raw[k+1]=x_raw[k]+eta*f(x_raw[k],alpha[k])+np.sqrt(eta)*s(x_raw[k],alpha[k])@u[k]
         y_raw[k+1]=y_raw[k]+eta*g(x_raw[k],alpha[k])+np.sqrt(eta)*s1(x_raw[k],alpha[k])@v[k]
